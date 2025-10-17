@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/auth/:path*", "destination": "https://REPLACE_WITH_BACKEND_HOST/auth/:path*" },
+    { "source": "/api/:path*", "destination": "https://REPLACE_WITH_BACKEND_HOST/api/:path*" }
+  ],
+  "buildCommand": "npm --prefix web ci && npm --prefix web run build",
+  "outputDirectory": "web/dist",
+  "framework": null
+}
+
